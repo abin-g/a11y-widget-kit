@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>a11y-widget-kit demo</title>
+    <!-- Run `npm run build` first. In production use https://unpkg.com/a11y-widget-kit/dist/... -->
+    <link rel="stylesheet" href="../dist/styles.css" />
+    <style>
+      body { font-family: system-ui, sans-serif; max-width: 42rem; margin: 3rem auto; padding: 0 1rem; line-height: 1.5; }
+      .card { padding: 1rem 1.25rem; border: 1px solid #e2e8f0; border-radius: 12px; margin: 1rem 0; transition: transform .3s; }
+      .card:hover { transform: translateY(-4px); }
+      label { margin-inline-end: 1rem; }
+    </style>
+  </head>
+  <body>
+    <h1>a11y-widget-kit demo</h1>
+    <p>Press <kbd>Alt</kbd> + <kbd>A</kbd> (<kbd>Option</kbd> + <kbd>A</kbd> on macOS) or use the floating button.</p>
+
+    <p>
+      <label>Language
+        <select id="locale"></select>
+      </label>
+      <label>Theme
+        <select id="theme">
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+          <option value="auto">Auto</option>
+        </select>
+      </label>
+      <label>Icon
+        <select id="icon">
+          <option value="accessibility">Accessibility</option>
+          <option value="eye">Eye</option>
+          <option value="sparkles">Sparkles</option>
+          <option value="hand">Hand</option>
+          <option value="custom">Custom star (example)</option>
+        </select>
+      </label>
+      <button type="button" id="own-button">Open from my own button</button>
+    </p>
+
+    <div class="card">
+      <h2>Sample content</h2>
+      <p>Here is some body text with <a href="#">a link</a> and <a href="#">another link</a>. Hover the card to see motion.</p>
+    </div>
+
+    <pre id="state" aria-live="off"></pre>
+
+    <script src="../dist/a11y-widget-kit.global.js"></script>
+    <script>
+      const { a11y, widget } = A11yWidgetKit.init({ locale: 'auto', widget: { position: 'bottom-right' } });
+
+      const customStarIcon = () => {
+        const icon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        icon.setAttribute('viewBox', '0 0 24 24');
+        icon.setAttribute('fill', 'currentColor');
+        const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        path.setAttribute('d', 'm12 2 2.8 6.2 6.7.7-5 4.5 1.4 6.6-5.9-3.4-5.9 3.4 1.4-6.6-5-4.5 6.7-.7z');
+        icon.append(path);
+        return icon;
+      };
+
+      const localeSelect = document.getElementById('locale');
+      for (const locale of a11y.getAvailableLocales()) {
+        localeSelect.add(new Option(locale.name || locale.code, locale.code));
+      }
+      localeSelect.value = a11y.getLocale();
+      localeSelect.addEventListener('change', (e) => {
+        a11y.setLocale(e.target.value);
+        document.documentElement.lang = a11y.getLocale();
+      });
+
+      document.getElementById('theme').addEventListener('change', (e) => widget.update({ theme: e.target.value }));
+      document.getElementById('icon').addEventListener('change', (e) => {
+        widget.update({ icon: e.target.value === 'custom' ? customStarIcon : e.target.value });
+      });
+      document.getElementById('own-button').addEventListener('click', () => widget.open());
+
+      const render = () => (document.getElementById('state').textContent = JSON.stringify(a11y.getState(), null, 2));
+      a11y.subscribe(render);
+      render();
+    </script>
+  </body>
+</html>

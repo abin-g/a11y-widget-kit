@@ -1,0 +1,43 @@
+import type { LocaleDefinition } from '../../core/types';
+
+export const ar: LocaleDefinition = {
+  code: 'ar',
+  name: 'العربية',
+  dir: 'rtl',
+  messages: {
+    'trigger.label': 'إمكانية الوصول',
+    'trigger.ariaLabel': 'فتح قائمة إمكانية الوصول',
+    'trigger.shortcutHint': 'اختصار: {shortcut}',
+    'dialog.title': 'تفضيلات إمكانية الوصول',
+    'dialog.subtitle': 'خصّص تجربتك البصرية والسمعية وطريقة التفاعل',
+    'dialog.close': 'إغلاق قائمة إمكانية الوصول',
+    'dialog.reset': 'استعادة الإعدادات الافتراضية',
+    'dialog.done': 'تم',
+    'section.visual': 'إمكانية الوصول البصري',
+    'section.hearing': 'السمع والصوت',
+    'section.motor': 'الحركة والتفاعل',
+    'feature.highContrast.label': 'وضع التباين العالي',
+    'feature.highContrast.description': 'تعزيز الحدود ووضوح النص وزيادة نسب التباين',
+    'feature.fontScale.label': 'حجم النص',
+    'feature.fontScale.description': 'اضبط حجم الخط لتحسين سهولة القراءة',
+    'feature.fontScale.option.normal': 'افتراضي ({percent}٪)',
+    'feature.fontScale.option.large': 'كبير ({percent}٪)',
+    'feature.fontScale.option.xlarge': 'كبير جدًا ({percent}٪)',
+    'feature.readableFont.label': 'خط مقروء وتباعد',
+    'feature.readableFont.description': 'زيادة تباعد الأسطر والأحرف لقراءة مريحة',
+    'feature.highlightLinks.label': 'تمييز الروابط',
+    'feature.highlightLinks.description': 'وضع خط تحت جميع الروابط القابلة للنقر وإبرازها',
+    'feature.visualAlerts.label': 'تنبيهات وتأكيدات مرئية',
+    'feature.visualAlerts.description': 'عرض التحديثات والمؤقتات والتنبيهات كرسائل واضحة على الشاشة',
+    'feature.reducedMotion.label': 'تقليل الحركة',
+    'feature.reducedMotion.description': 'إيقاف الرسوم المتحركة والانتقالات والتشغيل التلقائي',
+    'announce.opened': 'تم فتح قائمة إمكانية الوصول',
+    'announce.closed': 'تم إغلاق قائمة إمكانية الوصول',
+    'announce.reset': 'تمت استعادة إعدادات إمكانية الوصول الافتراضية',
+    'announce.enabled': '{feature}: مُفعّل',
+    'announce.disabled': '{feature}: معطّل',
+    'announce.changed': '{feature}: {value}',
+  },
+};
+
+export default ar;

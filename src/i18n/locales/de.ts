@@ -1,0 +1,43 @@
+import type { LocaleDefinition } from '../../core/types';
+
+export const de: LocaleDefinition = {
+  code: 'de',
+  name: 'Deutsch',
+  dir: 'ltr',
+  messages: {
+    'trigger.label': 'Barrierefreiheit',
+    'trigger.ariaLabel': 'Menü für Barrierefreiheit öffnen',
+    'trigger.shortcutHint': 'Tastenkürzel: {shortcut}',
+    'dialog.title': 'Einstellungen zur Barrierefreiheit',
+    'dialog.subtitle': 'Passen Sie Darstellung, Audio und Bedienung an Ihre Bedürfnisse an',
+    'dialog.close': 'Menü für Barrierefreiheit schließen',
+    'dialog.reset': 'Auf Standard zurücksetzen',
+    'dialog.done': 'Fertig',
+    'section.visual': 'Sehen',
+    'section.hearing': 'Hören & Audio',
+    'section.motor': 'Motorik & Bedienung',
+    'feature.highContrast.label': 'Hoher Kontrast',
+    'feature.highContrast.description': 'Verstärkt Rahmen, schärft Text und maximiert den Kontrast',
+    'feature.fontScale.label': 'Textgröße',
+    'feature.fontScale.description': 'Passt die Schriftgröße für bessere Lesbarkeit an',
+    'feature.fontScale.option.normal': 'Standard ({percent} %)',
+    'feature.fontScale.option.large': 'Groß ({percent} %)',
+    'feature.fontScale.option.xlarge': 'Sehr groß ({percent} %)',
+    'feature.readableFont.label': 'Lesefreundliche Schrift & Abstände',
+    'feature.readableFont.description': 'Erhöht Zeilen- und Buchstabenabstand für angenehmeres Lesen',
+    'feature.highlightLinks.label': 'Links hervorheben',
+    'feature.highlightLinks.description': 'Unterstreicht und betont alle anklickbaren Links',
+    'feature.visualAlerts.label': 'Visuelle Hinweise & Bestätigungen',
+    'feature.visualAlerts.description': 'Zeigt Statusmeldungen, Timer und Warnungen als deutliche Hinweise auf dem Bildschirm',
+    'feature.reducedMotion.label': 'Bewegung reduzieren',
+    'feature.reducedMotion.description': 'Deaktiviert Animationen, Übergänge und automatische Wiedergabe',
+    'announce.opened': 'Menü für Barrierefreiheit geöffnet',
+    'announce.closed': 'Menü für Barrierefreiheit geschlossen',
+    'announce.reset': 'Einstellungen zur Barrierefreiheit zurückgesetzt',
+    'announce.enabled': '{feature}: aktiviert',
+    'announce.disabled': '{feature}: deaktiviert',
+    'announce.changed': '{feature}: {value}',
+  },
+};
+
+export default de;

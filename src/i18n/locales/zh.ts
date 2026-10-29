@@ -1,0 +1,43 @@
+import type { LocaleDefinition } from '../../core/types';
+
+export const zh: LocaleDefinition = {
+  code: 'zh',
+  name: '中文（简体）',
+  dir: 'ltr',
+  messages: {
+    'trigger.label': '无障碍',
+    'trigger.ariaLabel': '打开无障碍菜单',
+    'trigger.shortcutHint': '快捷键：{shortcut}',
+    'dialog.title': '无障碍偏好设置',
+    'dialog.subtitle': '自定义您的视觉、听觉和交互体验',
+    'dialog.close': '关闭无障碍菜单',
+    'dialog.reset': '恢复默认设置',
+    'dialog.done': '完成',
+    'section.visual': '视觉辅助',
+    'section.hearing': '听觉与音频辅助',
+    'section.motor': '运动与交互',
+    'feature.highContrast.label': '高对比度模式',
+    'feature.highContrast.description': '增强边框、锐化文字并最大化对比度',
+    'feature.fontScale.label': '文字大小',
+    'feature.fontScale.description': '调整字体大小以提高可读性',
+    'feature.fontScale.option.normal': '默认（{percent}%）',
+    'feature.fontScale.option.large': '大（{percent}%）',
+    'feature.fontScale.option.xlarge': '特大（{percent}%）',
+    'feature.readableFont.label': '易读字体与间距',
+    'feature.readableFont.description': '增加行高和字间距，让阅读更舒适',
+    'feature.highlightLinks.label': '突出显示链接',
+    'feature.highlightLinks.description': '为所有可点击链接添加下划线并加以强调',
+    'feature.visualAlerts.label': '视觉提醒与确认',
+    'feature.visualAlerts.description': '以清晰的屏幕横幅显示状态更新、计时器和提醒',
+    'feature.reducedMotion.label': '减少动态效果',
+    'feature.reducedMotion.description': '关闭动画、过渡效果和自动播放',
+    'announce.opened': '无障碍菜单已打开',
+    'announce.closed': '无障碍菜单已关闭',
+    'announce.reset': '无障碍设置已恢复默认',
+    'announce.enabled': '{feature}：已开启',
+    'announce.disabled': '{feature}：已关闭',
+    'announce.changed': '{feature}：{value}',
+  },
+};
+
+export default zh;

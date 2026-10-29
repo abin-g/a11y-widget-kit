@@ -1,0 +1,43 @@
+import type { LocaleDefinition } from '../../core/types';
+
+export const fr: LocaleDefinition = {
+  code: 'fr',
+  name: 'Français',
+  dir: 'ltr',
+  messages: {
+    'trigger.label': 'Accessibilité',
+    'trigger.ariaLabel': 'Ouvrir le menu d’accessibilité',
+    'trigger.shortcutHint': 'Raccourci : {shortcut}',
+    'dialog.title': 'Préférences d’accessibilité',
+    'dialog.subtitle': 'Personnalisez votre expérience visuelle, auditive et d’interaction',
+    'dialog.close': 'Fermer le menu d’accessibilité',
+    'dialog.reset': 'Rétablir les paramètres par défaut',
+    'dialog.done': 'Terminé',
+    'section.visual': 'Accessibilité visuelle',
+    'section.hearing': 'Audition et son',
+    'section.motor': 'Motricité et interaction',
+    'feature.highContrast.label': 'Mode contraste élevé',
+    'feature.highContrast.description': 'Renforce les bordures, la netteté du texte et le contraste',
+    'feature.fontScale.label': 'Taille du texte',
+    'feature.fontScale.description': 'Ajuste la taille de la police pour une meilleure lisibilité',
+    'feature.fontScale.option.normal': 'Par défaut ({percent} %)',
+    'feature.fontScale.option.large': 'Grand ({percent} %)',
+    'feature.fontScale.option.xlarge': 'Très grand ({percent} %)',
+    'feature.readableFont.label': 'Police lisible et espacement',
+    'feature.readableFont.description': 'Augmente l’interligne et l’espacement des lettres pour un meilleur confort de lecture',
+    'feature.highlightLinks.label': 'Mettre en évidence les liens',
+    'feature.highlightLinks.description': 'Souligne et met en valeur tous les liens cliquables',
+    'feature.visualAlerts.label': 'Alertes visuelles et confirmations',
+    'feature.visualAlerts.description': 'Affiche les mises à jour, minuteurs et alertes sous forme de bannières claires',
+    'feature.reducedMotion.label': 'Réduire les animations',
+    'feature.reducedMotion.description': 'Désactive les animations, les transitions et la lecture automatique',
+    'announce.opened': 'Menu d’accessibilité ouvert',
+    'announce.closed': 'Menu d’accessibilité fermé',
+    'announce.reset': 'Paramètres d’accessibilité réinitialisés',
+    'announce.enabled': '{feature} : activé',
+    'announce.disabled': '{feature} : désactivé',
+    'announce.changed': '{feature} : {value}',
+  },
+};
+
+export default fr;

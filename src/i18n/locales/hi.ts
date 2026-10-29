@@ -1,0 +1,43 @@
+import type { LocaleDefinition } from '../../core/types';
+
+export const hi: LocaleDefinition = {
+  code: 'hi',
+  name: 'हिन्दी',
+  dir: 'ltr',
+  messages: {
+    'trigger.label': 'सुलभता',
+    'trigger.ariaLabel': 'सुलभता मेनू खोलें',
+    'trigger.shortcutHint': 'शॉर्टकट: {shortcut}',
+    'dialog.title': 'सुलभता प्राथमिकताएँ',
+    'dialog.subtitle': 'अपने देखने, सुनने और इंटरैक्शन के अनुभव को अनुकूलित करें',
+    'dialog.close': 'सुलभता मेनू बंद करें',
+    'dialog.reset': 'डिफ़ॉल्ट पर रीसेट करें',
+    'dialog.done': 'हो गया',
+    'section.visual': 'दृश्य सुलभता',
+    'section.hearing': 'श्रवण और ऑडियो सहायता',
+    'section.motor': 'गति और इंटरैक्शन',
+    'feature.highContrast.label': 'उच्च कंट्रास्ट मोड',
+    'feature.highContrast.description': 'किनारों को उभारें, टेक्स्ट को स्पष्ट करें और कंट्रास्ट बढ़ाएँ',
+    'feature.fontScale.label': 'टेक्स्ट का आकार',
+    'feature.fontScale.description': 'बेहतर पठनीयता के लिए फ़ॉन्ट का आकार बदलें',
+    'feature.fontScale.option.normal': 'डिफ़ॉल्ट ({percent}%)',
+    'feature.fontScale.option.large': 'बड़ा ({percent}%)',
+    'feature.fontScale.option.xlarge': 'बहुत बड़ा ({percent}%)',
+    'feature.readableFont.label': 'पढ़ने में आसान फ़ॉन्ट और स्पेसिंग',
+    'feature.readableFont.description': 'आरामदायक पढ़ने के लिए पंक्तियों और अक्षरों के बीच की दूरी बढ़ाएँ',
+    'feature.highlightLinks.label': 'लिंक हाइलाइट करें',
+    'feature.highlightLinks.description': 'सभी क्लिक करने योग्य लिंक को रेखांकित करें और उभारें',
+    'feature.visualAlerts.label': 'दृश्य अलर्ट और पुष्टि',
+    'feature.visualAlerts.description': 'सभी स्थिति अपडेट, टाइमर और अलर्ट स्क्रीन पर स्पष्ट बैनर के रूप में दिखाएँ',
+    'feature.reducedMotion.label': 'मोशन कम करें',
+    'feature.reducedMotion.description': 'एनिमेशन, ट्रांज़िशन और ऑटोप्ले बंद करें',
+    'announce.opened': 'सुलभता मेनू खुला',
+    'announce.closed': 'सुलभता मेनू बंद हुआ',
+    'announce.reset': 'सुलभता सेटिंग्स डिफ़ॉल्ट पर रीसेट हो गईं',
+    'announce.enabled': '{feature} चालू',
+    'announce.disabled': '{feature} बंद',
+    'announce.changed': '{feature}: {value}',
+  },
+};
+
+export default hi;

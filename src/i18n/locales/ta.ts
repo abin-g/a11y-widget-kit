@@ -1,0 +1,43 @@
+import type { LocaleDefinition } from '../../core/types';
+
+export const ta: LocaleDefinition = {
+  code: 'ta',
+  name: 'தமிழ்',
+  dir: 'ltr',
+  messages: {
+    'trigger.label': 'அணுகல்தன்மை',
+    'trigger.ariaLabel': 'அணுகல்தன்மை மெனுவைத் திற',
+    'trigger.shortcutHint': 'குறுக்குவழி: {shortcut}',
+    'dialog.title': 'அணுகல்தன்மை விருப்பங்கள்',
+    'dialog.subtitle': 'உங்கள் பார்வை, கேட்டல் மற்றும் பயன்பாட்டு அனுபவத்தைத் தனிப்பயனாக்குங்கள்',
+    'dialog.close': 'அணுகல்தன்மை மெனுவை மூடு',
+    'dialog.reset': 'இயல்புநிலைக்கு மீட்டமை',
+    'dialog.done': 'முடிந்தது',
+    'section.visual': 'பார்வை அணுகல்தன்மை',
+    'section.hearing': 'கேட்டல் மற்றும் ஒலி ஆதரவு',
+    'section.motor': 'இயக்கம் மற்றும் தொடர்பு',
+    'feature.highContrast.label': 'உயர் மாறுபாடு பயன்முறை',
+    'feature.highContrast.description': 'எல்லைகளை வலுப்படுத்தி, உரையைத் தெளிவாக்கி, மாறுபாட்டை அதிகரிக்கும்',
+    'feature.fontScale.label': 'உரை அளவு',
+    'feature.fontScale.description': 'எளிதாகப் படிக்க எழுத்துரு அளவைச் சரிசெய்யுங்கள்',
+    'feature.fontScale.option.normal': 'இயல்புநிலை ({percent}%)',
+    'feature.fontScale.option.large': 'பெரியது ({percent}%)',
+    'feature.fontScale.option.xlarge': 'மிகப் பெரியது ({percent}%)',
+    'feature.readableFont.label': 'படிக்க எளிதான எழுத்துரு & இடைவெளி',
+    'feature.readableFont.description': 'வசதியாகப் படிக்க வரி மற்றும் எழுத்து இடைவெளியை அதிகரிக்கும்',
+    'feature.highlightLinks.label': 'இணைப்புகளை முன்னிலைப்படுத்து',
+    'feature.highlightLinks.description': 'கிளிக் செய்யக்கூடிய அனைத்து இணைப்புகளையும் அடிக்கோடிட்டு முன்னிலைப்படுத்தும்',
+    'feature.visualAlerts.label': 'காட்சி எச்சரிக்கைகள் & உறுதிப்படுத்தல்கள்',
+    'feature.visualAlerts.description': 'நிலை புதுப்பிப்புகள், நேரமானிகள் மற்றும் எச்சரிக்கைகளைத் திரையில் தெளிவான பதாகைகளாகக் காட்டும்',
+    'feature.reducedMotion.label': 'அசைவைக் குறை',
+    'feature.reducedMotion.description': 'அனிமேஷன்கள், மாற்றங்கள் மற்றும் தானியங்கு இயக்கத்தை முடக்கும்',
+    'announce.opened': 'அணுகல்தன்மை மெனு திறக்கப்பட்டது',
+    'announce.closed': 'அணுகல்தன்மை மெனு மூடப்பட்டது',
+    'announce.reset': 'அணுகல்தன்மை அமைப்புகள் இயல்புநிலைக்கு மீட்டமைக்கப்பட்டன',
+    'announce.enabled': '{feature} இயக்கப்பட்டது',
+    'announce.disabled': '{feature} முடக்கப்பட்டது',
+    'announce.changed': '{feature}: {value}',
+  },
+};
+
+export default ta;

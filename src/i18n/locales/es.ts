@@ -1,0 +1,43 @@
+import type { LocaleDefinition } from '../../core/types';
+
+export const es: LocaleDefinition = {
+  code: 'es',
+  name: 'Español',
+  dir: 'ltr',
+  messages: {
+    'trigger.label': 'Accesibilidad',
+    'trigger.ariaLabel': 'Abrir el menú de accesibilidad',
+    'trigger.shortcutHint': 'Atajo: {shortcut}',
+    'dialog.title': 'Preferencias de accesibilidad',
+    'dialog.subtitle': 'Personaliza tu experiencia visual, auditiva y de interacción',
+    'dialog.close': 'Cerrar el menú de accesibilidad',
+    'dialog.reset': 'Restablecer valores predeterminados',
+    'dialog.done': 'Listo',
+    'section.visual': 'Accesibilidad visual',
+    'section.hearing': 'Audición y audio',
+    'section.motor': 'Motricidad e interacción',
+    'feature.highContrast.label': 'Modo de alto contraste',
+    'feature.highContrast.description': 'Refuerza los bordes, la nitidez del texto y el contraste',
+    'feature.fontScale.label': 'Tamaño del texto',
+    'feature.fontScale.description': 'Ajusta el tamaño de la fuente para mejorar la legibilidad',
+    'feature.fontScale.option.normal': 'Predeterminado ({percent}%)',
+    'feature.fontScale.option.large': 'Grande ({percent}%)',
+    'feature.fontScale.option.xlarge': 'Muy grande ({percent}%)',
+    'feature.readableFont.label': 'Fuente legible y espaciado',
+    'feature.readableFont.description': 'Aumenta el interlineado y el espacio entre letras para leer con comodidad',
+    'feature.highlightLinks.label': 'Resaltar enlaces',
+    'feature.highlightLinks.description': 'Subraya y destaca todos los enlaces',
+    'feature.visualAlerts.label': 'Alertas visuales y confirmaciones',
+    'feature.visualAlerts.description': 'Muestra avisos, temporizadores y alertas como mensajes claros en pantalla',
+    'feature.reducedMotion.label': 'Reducir movimiento',
+    'feature.reducedMotion.description': 'Desactiva animaciones, transiciones y reproducción automática',
+    'announce.opened': 'Menú de accesibilidad abierto',
+    'announce.closed': 'Menú de accesibilidad cerrado',
+    'announce.reset': 'Se restablecieron los ajustes de accesibilidad',
+    'announce.enabled': '{feature}: activado',
+    'announce.disabled': '{feature}: desactivado',
+    'announce.changed': '{feature}: {value}',
+  },
+};
+
+export default es;
